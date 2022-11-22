@@ -1,5 +1,6 @@
 #include "Case.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 Case::Case(string nom, int index)
