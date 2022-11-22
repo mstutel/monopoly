@@ -7,10 +7,10 @@ class Case{
   
   private:
     string Nom;
-    Case *Suivante; 
+    int Index; 
   
   public:
-    Case();
+    Case(string, int);
     arreterSur();
     getNom();
     setNom();
