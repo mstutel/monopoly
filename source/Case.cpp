@@ -10,20 +10,20 @@ Case::Case(string nom, int index)
 
 string Case::GetNom()
 {
-    return rdv;
+    return Nom;
 }
 
-NoeudRDV *NoeudRDV::GetSuivant()
+int Case::GetIndex()
 {
-    return noeud;
+    return Index;
 }
 
-void NoeudRDV::SetRDV(RDV index)
+void Case::SetCase(int index)
 {
-    rdv = index;
+    Index = index;
 }
 
-void NoeudRDV : SetSuivant(NoeudRDV noeud)
+void Case :: SetNom(string nom)
 {
-    suivant = &noeud;
+    Nom = nom;
 }
