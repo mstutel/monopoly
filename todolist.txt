@@ -1,0 +1,16 @@
+Tâches à faire
+
+Joueur
+Pion
+Plateau
+Carte
+Case
+Gare
+Compagnie
+Terrain
+Banque
+Prison
+Depart
+Chance
+Propriété
+Liste
