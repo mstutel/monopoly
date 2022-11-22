@@ -1,5 +1,5 @@
 Tâches à faire
-> Case, Pion, Dé, Carte
+> Case, Joueur, Dé, Carte
 
 Joueur
 Pion
