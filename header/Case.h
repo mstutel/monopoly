@@ -6,10 +6,11 @@ using namespace std;
 class Case{
   
   private:
-    string nom;
-    suivante case;
+    string Nom;
+    Case *Suivante; 
   
   public:
+    Case();
     arreterSur();
     getNom();
     setNom();
