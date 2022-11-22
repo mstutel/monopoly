@@ -1,5 +1,7 @@
 #ifndef CASE_H_
 #define CASE_H_
+#include <iostream>
+using namespace std;
 
 class Case{
   
