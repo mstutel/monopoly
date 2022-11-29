@@ -1,30 +1,27 @@
 #include "Case.h"
-#include <iostream>
-#include <string>
-using namespace std;
 
-Case::Case(string nom, int index)
+string Case::getNom()
 {
-    this->Nom = nom;
-    this->Index = index;
+	return nom;
 }
 
-string Case::GetNom()
+Case* Case::getSuivante()
 {
-    return Nom;
+	return suivante;
 }
 
-int Case::GetIndex()
+void Case::setNom(string nom)
 {
-    return Index;
+	this->nom = nom;
 }
 
-void Case::SetCase(int index)
+void Case::setSuivante(Case c)
 {
-    Index = index;
+	suivante = &c;
 }
 
-void Case :: SetNom(string nom)
+// A FINIR !!!
+
+void Case::arreterSur()
 {
-    Nom = nom;
 }
