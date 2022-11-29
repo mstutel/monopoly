@@ -1,3 +1,5 @@
+#pragma once
+#include "Pion.h"
 #include <string>
 using namespace std;
 
@@ -5,22 +7,24 @@ class Joueur
 {
 	private:
 		string nom;
-		int position;
+		Pion pion;
 		int solde;
 
 	public:
 		//getters
-		string getNom()   { return nom;  }
-		int getPosition() { return position; }
-		int getSolde()    { return solde; }
+		string getNom();
+		Pion getPion();
+		int getSolde();
 
 		//setters
-		void setNom(int nom)           { this->nom = nom; }
-		void setPosition(int position) { this->position = position; }
-		void setSolde(int solde)       { this->solde = solde; }
+		void setNom(int nom);
+		void setPion(Pion pion);
+		void setSolde(int solde);
 
 		//Actions
 		void crediter(int credit) { solde += credit; }
 		void debiter(int debit)   { solde -= debit; }
-		void avancer(int des)     { position += des; }
+		void jouer();
+		void operation();
+
 };
