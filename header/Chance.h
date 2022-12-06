@@ -3,7 +3,7 @@
 
 class Chance : public Case
 {
-	private :
+	private:
 		string nom;
 	public:
 		
