@@ -9,6 +9,9 @@ class Case
 		Case* suivante;
 
 	public:
+		//Constructeurs
+		Case(string nom);
+
 		//Getters 
 		string getNom();
 		Case* getSuivante();
@@ -21,4 +24,3 @@ class Case
 		void arreterSur();
 
 };
-
