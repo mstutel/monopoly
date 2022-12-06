@@ -17,6 +17,6 @@ class Plateau{
     		case createCases(string nom, Case c);
    
 	        //lien entre les cases
-	        void lierCases();
+	        void lierCases(Case case1, Case case2);
     
 };
