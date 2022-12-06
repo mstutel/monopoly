@@ -1,5 +1,12 @@
 #include "Case.h"
 
+
+Case::Case(string nom)
+{
+	this->nom = nom;
+	suivante = nullptr;
+}
+
 string Case::getNom()
 {
 	return nom;
