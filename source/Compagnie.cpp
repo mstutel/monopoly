@@ -1,5 +1,9 @@
-#include "Compagnie.h"
+#include "Gare.h"
 
-void Compagnie::arreterSur()
+Gare::Gare(string nom, int loyer, int prixAchat) : Propriete(nom,loyer,prixAchat)
+{
+}
+
+void Gare::arreterSur()
 {
 }
