@@ -8,6 +8,9 @@ class Propriete : public Case
 		int prixAchat;
 
 	public:
+		//Constructeurs
+		Propriete(string nom, int loyer, int prixAchat);
+
 		//Getters
 		int getLoyer();
 		int getPrixAchat();
@@ -20,4 +23,3 @@ class Propriete : public Case
 		void arreterSur();
 
 };
-
