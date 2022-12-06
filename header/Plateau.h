@@ -8,16 +8,15 @@ using namespace std;
 
 #include <list>
 
-class Plateau
-{
+class Plateau{
 	private:
 		case Case;
 
 	public:
-    //Constructeur
-    case createCases();
+    		//Constructeur
+    		case createCases();
    
-    //lien entre les cases
-    void lierCases();
+	        //lien entre les cases
+	        void lierCases();
     
 };
