@@ -14,7 +14,7 @@ class Plateau{
 
 	public:
     		//Constructeur
-    		case createCases();
+    		case createCases(string nom, Case c);
    
 	        //lien entre les cases
 	        void lierCases();
