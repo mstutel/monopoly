@@ -21,5 +21,5 @@ class Plateau{
 
 	public:
 		//Construction du plateau
-    	Plateau();
+    		Plateau();
 };
