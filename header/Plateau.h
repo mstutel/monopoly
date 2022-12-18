@@ -1,22 +1,25 @@
 #pragma once
 #include <string>
 using namespace std;
+
 #include "Case.h"
+#include "Chance.h"
+#include "Communaute.h"
+#include "Compagnie.h"
+#include "Depart.h"
+#include "Gare.h"
+#include "Parc.h"
+#include "Prison.h"
+#include "Taxe.h"
+#include "Terrain.h"
 
-#ifndef Plateau_H
-#define Plateau_H
-
-#include <list>
+//Include tous les types de cases
 
 class Plateau{
 	private:
-		case Case;
+		Case liste_cases[40];
 
 	public:
-    		//Constructeur
-    		case createCases(string nom, Case c);
-   
-	        //lien entre les cases
-	        void lierCases(Case case1, Case case2);
-    
+		//Construction du plateau
+    	Plateau();
 };
