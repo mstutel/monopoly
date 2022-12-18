@@ -1,14 +1,20 @@
 #pragma once
-#include "Case.h"
-
-class Taxe : public Case
+#include "Propriete.h"
+class Terrain : public Propriete
 {
 	private:
 		string nom;
-		int cout;
-
+		int prixAchat;
+		int loyer;
+		int maison1;
+		int maison2;
+		int maison3;
+		int maison4;
+		int hotel;
+		int prixMaison;
+		
 	public:
-		Taxe(string nom, int cout);
+		Terrain(string nom, int prixAchat, int loyer, int maison1, int maison2, int maison3, int maison4, int hotel, int prixMaison);
 		void arreterSur();
 };
 
