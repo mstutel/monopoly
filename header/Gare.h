@@ -5,6 +5,6 @@ class Gare : public Propriete
 {
 	public:
 		//Constructeurs
-		Gare(string nom, int loyer, int prixAchat);
+		Gare(string nom, int prixAchat,int loyer);
 		void arreterSur();
 };
