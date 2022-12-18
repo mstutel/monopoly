@@ -10,6 +10,7 @@ class Case
 
 	public:
 		//Constructeurs
+		Case();
 		Case(string nom);
 
 		//Getters 
@@ -22,5 +23,4 @@ class Case
 
 		//Actions
 		void arreterSur();
-
 };
