@@ -3,10 +3,10 @@
 using namespace std;
 
 
-Propriete::Propriete(string nom, int loyer, int prixAchat) : Case(nom)
+Propriete::Propriete(string nom, int prixAchat, int loyer) : Case(nom)
 {
-    this->loyer = loyer;
     this->prixAchat = prixAchat;
+    this->loyer = loyer;
 }
 
 int Propriete::getLoyer()
