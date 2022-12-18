@@ -9,7 +9,7 @@ class Propriete : public Case
 
 	public:
 		//Constructeurs
-		Propriete(string nom, int loyer, int prixAchat);
+		Propriete(string nom, int prixAchat, int loyer);
 
 		//Getters
 		int getLoyer();
