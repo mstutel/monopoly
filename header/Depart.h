@@ -1,11 +1,11 @@
 #pragma once
-#include "Case.h"
+#include "Propriete.h"
 
-class Depart : public Case
+class Compagnie : public Propriete
 {
-	private : 
-		int nom;
 	public:
-		Depart(string nom);
+		//Constructeurs
+		Compagnie(string nom, int prixAchat, int loyer);
+
 		void arreterSur();
 };
