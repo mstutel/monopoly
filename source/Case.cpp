@@ -1,5 +1,10 @@
 #include "Case.h"
 
+Case::Case()
+{
+	nom = "";
+	suivante = nullptr;
+}
 
 Case::Case(string nom)
 {
