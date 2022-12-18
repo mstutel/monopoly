@@ -1,9 +1,9 @@
-#include "Gare.h"
+#include "Parc.h"
 
-Gare::Gare(string nom, int prixAchat, int loyer) : Propriete(nom, prixAchat, loyer)
+Parc::Parc(string nom) : Case(nom)
 {
 }
 
-void Gare::arreterSur()
+void Parc::arreterSur()
 {
 }
