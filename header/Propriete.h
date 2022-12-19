@@ -1,5 +1,6 @@
 #pragma once
 #include "Case.h"
+#include "Joueur.h"
 
 class Propriete : public Case
 {
