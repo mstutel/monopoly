@@ -1,11 +1,9 @@
 #pragma once
 #include "Propriete.h"
+
 class Terrain : public Propriete
 {
 	private:
-		string nom;
-		int prixAchat;
-		int loyer;
 		int maison1;
 		int maison2;
 		int maison3;
@@ -17,4 +15,3 @@ class Terrain : public Propriete
 		Terrain(string nom, int prixAchat, int loyer, int maison1, int maison2, int maison3, int maison4, int hotel, int prixMaison);
 		void arreterSur();
 };
-
