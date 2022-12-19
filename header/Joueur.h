@@ -1,5 +1,4 @@
 #pragma once
-#include "Pion.h"
 #include <string>
 using namespace std;
 
@@ -7,18 +6,16 @@ class Joueur
 {
 	private:
 		string nom;
-		Pion pion;
+		Case position;
 		int solde;
 
 	public:
 		//getters
 		string getNom();
-		Pion getPion();
 		int getSolde();
 
 		//setters
 		void setNom(int nom);
-		void setPion(Pion pion);
 		void setSolde(int solde);
 
 		//Actions
