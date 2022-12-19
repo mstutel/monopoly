@@ -3,11 +3,7 @@
 
 class Parc : public Case
 {
-	private:
-		string nom;
-
 	public:
 		Parc(string nom);
 		void arreterSur();
 };
-
