@@ -28,9 +28,3 @@ void Propriete::setPrixAchat(int p)
 {
     prixAchat = p;
 }
-
-// A FINIR !!!
-
-void Propriete::arreterSur()
-{
-}
