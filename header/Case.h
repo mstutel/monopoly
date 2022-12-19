@@ -6,7 +6,6 @@ class Case
 {
 	private:
 		string nom;
-		Case* suivante;
 
 	public:
 		//Constructeurs
@@ -15,12 +14,8 @@ class Case
 
 		//Getters 
 		string getNom();
-		Case* getSuivante();
 
 		//Setters
 		void setNom(string nom);
-		void setSuivante(Case suivante);
 
-		//Actions
-		void arreterSur();
 };
