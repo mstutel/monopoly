@@ -19,8 +19,4 @@ class Propriete : public Case
 		//Setters
 		void setLoyer(int l);
 		void setPrixAchat(int p);
-
-		//Actions
-		void arreterSur();
-
 };
