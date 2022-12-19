@@ -1,12 +1,4 @@
-- Comment faire avancer les joueurs sur le plateau ? dés randoms ? 
-- Coder les fonctions arreterSur() (sauf chance et communauté). Comment savoir qui paie à qui pour les propriétés ?
-- Rentrer les cartes chances+communautées. Comment piocher une carte ? fonction random ? Est ce qu'on peut repiocher les mêmes cartes ?
-- Coder les particularités des propriétés : nombre de gare du proprio, couleur terrain, loyer compagnie, poser hotel/maison.
-- Coder le déroulé d'une partie. Comment s'affiche la partie ? Quand un joueur est éliminé ? Fin de partie ?
-
-
-
-Utiliser toutes les notions vues en cours : Fonctions amies / Classes virtuelles / Exceptions / Liste chaînées / Redéfinition d’opérateurs / Membres statiques / Templates…
+tiliser toutes les notions vues en cours : Fonctions amies / Classes virtuelles / Exceptions / Liste chaînées / Redéfinition d’opérateurs / Membres statiques / Templates…
 Prévoir les modes d'éxécution : automatique (automatique : réponse oui systématique aux achats… OU aléatoire : réponse O/n aux achats selon tirage au sort… OU Intéractif)
 Réfléchir à un affichage régulier de l’état du plateau
 Réfléchir à la sauvegarde de fichier trace pendant le déroulement de la partie, à la sauvegarde d’une partie non terminée
