@@ -1,17 +1,9 @@
-Tâches à faire
-> Case, Joueur, Dé, Carte
+- Comment faire avancer les joueurs sur le plateau ? fonction random pour les dés ?
+- Rentrer toutes les Cartes dans ListesCartes. Coder ce qu'il se passe quand on doit piocher ? (chance/communautée) 
+- Coder toutes les fonctions arreterSur (sauf chance/communauté) ? Qu'est ce qu'il se passe pour les propriété ? On achète, on paye, qui, combien ?
+- Coder les particularités des propriétés : couleur, loyer en fonction du nombre de gare, loyer des compagnies, acheter maison/hotel ?
+- Comment faire tourner le jeu tout seul ? Comment afficher ce qu'il se passe ? Quan un joueur perd ? Comment l'éliminer ? Fin du jeu ?
 
-Joueur
-Pion
-Plateau
-Carte
-Case
-Gare
-Compagnie
-Terrain
-Banque
-Prison
-Depart
-Chance
-Propriété
-Liste
+
+Diagramme UML :
+https://docs.google.com/presentation/d/1gScQWmu91ndTUXxJavT628fMXUmOiDh-Ku18MgqEKqo/edit#slide=id.p1
