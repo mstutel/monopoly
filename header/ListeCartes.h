@@ -3,8 +3,10 @@
 class ListeCartes {
 
 private :
-  Cartes* listeCartesChance[];
-  Cartes* listeCartesCommunaute[];
+  Carte* listeCartesChance;
+  Carte* hautPileChance;
+  Carte* listeCartesCommunaute;
+  Carte* hautPileCommunaute;
 
 public :
   ListeCartes();
