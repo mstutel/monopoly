@@ -19,5 +19,7 @@ private :
 public :
   Carte(int, int,bool, int,string, Carte* suivant,int isLiberation=false,int isReparation=false);
   void action(Joueur);
+  Carte getSuivant();
+  void setSuivant(Carte);
   
 };
