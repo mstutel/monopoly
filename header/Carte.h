@@ -13,10 +13,11 @@ private :
   string description;
   bool isLiberation;
   bool isReparation;
+  Carte* suivant;
   
  
 public :
-  Carte(int, int,bool, int,string,int isLiberation=false,int isReparation=false);
+  Carte(int, int,bool, int,string, Carte* suivant,int isLiberation=false,int isReparation=false);
   void action(Joueur);
   
 };
