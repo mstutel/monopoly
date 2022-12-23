@@ -1,8 +1,8 @@
 #include "../header/Carte.h"
 #include "../header/Joueur.h"
 
-Carte :: Carte(int indice, int transaction, bool positionGlobale, int changePosition, string description, Carte* suivant bool isLiberation, bool isReparation) {
-    this->indice=indice;
+Carte :: Carte(int transaction, bool positionGlobale, int changePosition, string description, Carte* suivant bool isLiberation, bool isReparation) {
+    
     this->transaction=transaction;
     this->positionGlobale=positionGlobale;
     this->changePosition=changePosition;
