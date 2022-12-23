@@ -1,12 +1,13 @@
 #include "../header/Carte.h"
 #include "../header/Joueur.h"
 
-Carte :: Carte(int indice, int transaction, bool positionGlobale, int changePosition, string description, bool isLiberation, bool isReparation) {
+Carte :: Carte(int indice, int transaction, bool positionGlobale, int changePosition, string description, Carte* suivant bool isLiberation, bool isReparation) {
     this->indice=indice;
     this->transaction=transaction;
     this->positionGlobale=positionGlobale;
     this->changePosition=changePosition;
     this->description=description;
+    this->suivant=suivant;
     this->isLiberation=isLiberation;
     this->isReparation=isReparation;
 }
@@ -66,8 +67,17 @@ void Carte :: action(Joueur J) {
         /* à faire : il pouvoir connaître les propriétés pour chaque joueur (peut-être dans la classe Jeu)*/
     
     }
-            
+              
+}
+
+void Carte::setSuivant(Carte suivant){
     
-    
-  
+    this->suivant=suivant;
+
+}
+
+Carte Carte::getSuivant(){
+
+    return suivant;
+
 }
