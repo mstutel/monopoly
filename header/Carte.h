@@ -6,7 +6,6 @@ class Carte {
 
 private :
   
-  int indice;
   int transaction;
   bool positionGlobale; /* vaut true si le changement de position est "global" (par exemple "Allez à la Rue de la Paix") et false sinon (par exemple "Réculez de 3 cases") */
   int changePostion;
@@ -17,7 +16,7 @@ private :
   
  
 public :
-  Carte(int, int,bool, int,string, Carte* suivant,int isLiberation=false,int isReparation=false);
+  Carte(int,bool, int,string, Carte* suivant,int isLiberation=false,int isReparation=false);
   void action(Joueur);
   Carte getSuivant();
   void setSuivant(Carte);
