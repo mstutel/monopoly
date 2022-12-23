@@ -3,9 +3,9 @@
 class ListeCartes {
 
 private :
-  Carte* listeCartesChance;
+  Carte* listeChance;
   Carte* hautPileChance;
-  Carte* listeCartesCommunaute;
+  Carte* listeCommunaute;
   Carte* hautPileCommunaute;
 
 public :
