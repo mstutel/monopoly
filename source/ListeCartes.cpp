@@ -42,8 +42,8 @@ ListeCartes::ListeCartes() {
    listeCommunaute[0].setSuivant(listeCommunaute[13]);
    
    /* Initialisation des pointeurs de haut de pile pour leurs piles respectives*/
-   hautChance=listeChance[0];
-   hautCommunaute=listeCommunaute[0];
+   hautChance=&listeChance[0];
+   hautCommunaute=&listeCommunaute[0];
    
 
 }
