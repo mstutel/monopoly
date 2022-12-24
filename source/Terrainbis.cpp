@@ -1,7 +1,7 @@
 #include "Terrainbis.h"
 using namespace std;
 
-Terrain::Terrain(String nom, int prixAchat, int loyer, int nombredemaisons, int prixMaison) : Propriete(nom,prixAchat,loyer)
+Terrain::Terrain(string nom, int prixAchat, int loyer, int nombredemaisons, int prixMaison) : Propriete(nom,prixAchat,loyer)
 {
 	this->nombredemaisons = nombredemaisons;
 	this->couleur = couleur;
