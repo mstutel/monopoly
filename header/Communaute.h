@@ -3,7 +3,8 @@
 
 class Communaute : public Case
 {	
-	public:
+	private:
 		Communaute(string nom);
+	public:
 		void arreterSur();
 };
