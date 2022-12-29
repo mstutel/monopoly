@@ -10,7 +10,7 @@ private :
 
 public :
   ListeCartes();
-  void tirageChance();
-  void tirageCommunaute();
+  Carte tirageChance();
+  Carte tirageCommunaute();
 
 };
