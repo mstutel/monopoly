@@ -32,8 +32,7 @@ void Case::setSuivante(Case c)
 	suivante = &c;
 }
 
-// A FINIR !!!
-
-void Case::arreterSur()
+Case* Case::caseSuivante()
 {
+	return suivante;
 }
