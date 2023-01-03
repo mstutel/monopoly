@@ -83,14 +83,23 @@ Terrain::acheterMaison(string Proprietaire, string Couleur, int nombredemaisons,
 {
   if (checkCouleur(string Proprietaire, string Couleur) == true)
     {
-      if (Terrain.nombredemaisons < 5)
+      if (Terrain.loyer < loyerhotel)
         {
-          Terrain.nombredemaisons += 1; //Il faut adapter le loyer
+          //Il faut adapter le loyer
           this->solde = solde - prixMaison; //debiter(prixMaison)? 
         }
     }
 }
 
-void Terrain::arreterSur()
+void Terrain::arreterSur(Joueur joueur)
 {
+	if (proprietaire == nullptr) {
+			if (joueur.getSolde() >= prixAchat) {
+				this->acheter(joueur);
+			}
+		}
+		else {
+			joueur.payer(*proprietaire, loyer);
+		}
+
 }
