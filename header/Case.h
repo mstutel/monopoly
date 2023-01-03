@@ -1,21 +1,38 @@
-#pragma once
-#include <string>
-using namespace std;
+#include "Case.h"
 
-class Case
+Case::Case()
 {
-	private:
-		string nom;
+	nom = "";
+	suivante = nullptr;
+}
 
-	public:
-		//Constructeurs
-		Case();
-		Case(string nom);
+Case::Case(string nom)
+{
+	this->nom = nom;
+	suivante = nullptr;
+}
 
-		//Getters 
-		string getNom();
+string Case::getNom()
+{
+	return nom;
+}
 
-		//Setters
-		void setNom(string nom);
+Case* Case::getSuivante()
+{
+	return suivante;
+}
 
-};
+void Case::setNom(string nom)
+{
+	this->nom = nom;
+}
+
+void Case::setSuivante(Case c)
+{
+	suivante = &c;
+}
+
+Case* Case::caseSuivante()
+{
+	return suivante;
+}
