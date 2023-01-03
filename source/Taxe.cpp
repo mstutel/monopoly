@@ -5,6 +5,7 @@ Taxe::Taxe(string nom, int cout) : Case(nom)
 	this->cout = cout;
 }
 
-void Taxe::arreterSur()
+void Taxe::arreterSur(Joueur joueur)
 {
+	joueur.debiter(cout);
 }
