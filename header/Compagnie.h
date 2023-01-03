@@ -5,5 +5,5 @@ class Compagnie : public Propriete
 {
 	public:
 		Compagnie(string nom, int prixAchat, int loyer);
-		void arreterSur();
+		void arreterSur(Joueur joueur);
 };
