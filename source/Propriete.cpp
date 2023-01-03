@@ -2,11 +2,11 @@
 #include <string>
 using namespace std;
 
-
 Propriete::Propriete(string nom, int prixAchat, int loyer) : Case(nom)
 {
     this->prixAchat = prixAchat;
-    this->loyer = loyer;
+    this->loyer = loyer; 
+    proprietaire = nullptr;
 }
 
 int Propriete::getLoyer()
@@ -27,4 +27,10 @@ void Propriete::setLoyer(int l)
 void Propriete::setPrixAchat(int p)
 {
     prixAchat = p;
+}
+
+void Propriete::acheter(Joueur joueur)
+{
+    joueur.debiter(prixAchat);
+    proprietaire = &joueur;
 }
