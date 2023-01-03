@@ -5,17 +5,22 @@ using namespace std;
 class Terrain : public Propriete
 {
   private:
+    int nombredemaisons;
     int loyermaison1;
     int loyermaison2;
     int loyermaison3;
     int loyermaison4;
+    int loyerhotel;
+    int listeloyer;
     int prixMaison;
     string Couleur
 
 
   public:
     //Constructeur, nom de la propriété, son prix d'achat, son loyer, nb de maisons, prix maison, propriétaire, couleur
-    Terrain(string nom, int prixAchat, int loyer, int loyermaison1, int loyermaison2, int loyermaison3, int loyermaison4, int prixMaison, string Couleur);
+    Terrain(string nom, int prixAchat, int loyer, int loyermaison1, int loyermaison2, int loyermaison3, int loyermaison4, int loyerhotel, int prixMaison, string Couleur);
+    
+    void listeloyer();
     
     void arreterSur();
     
