@@ -4,9 +4,10 @@
 
 class Propriete : public Case
 {
-	private:
+	protected:
 		int loyer;
 		int prixAchat;
+		Joueur* proprietaire;
 
 	public:
 		//Constructeurs
@@ -19,4 +20,7 @@ class Propriete : public Case
 		//Setters
 		void setLoyer(int l);
 		void setPrixAchat(int p);
+
+		//Actions
+		void acheter(Joueur joueur);
 };
