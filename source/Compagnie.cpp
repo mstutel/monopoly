@@ -4,6 +4,14 @@ Compagnie::Compagnie(string nom, int prixAchat, int loyer) : Propriete(nom,prixA
 {
 }
 
-void Compagnie::arreterSur()
+void Compagnie::arreterSur(Joueur joueur)
 {
+	if (proprietaire == nullptr) {
+		if (joueur.getSolde() >= prixAchat) {
+			this->acheter(joueur);
+		}
+	}
+	else {
+		joueur.payer(*proprietaire, loyer);
+	}
 }
