@@ -5,5 +5,5 @@ class Prison : public Case
 {	
 	public:
 		Prison(string nom);
-		void arreterSur();
+		void arreterSur(Joueur joueur);
 };
