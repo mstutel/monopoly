@@ -10,7 +10,6 @@ class Terrain : public Propriete
     int loyermaison3;
     int loyermaison4;
     int prixMaison;
-    string Proprietaire; 
     string Couleur
 
 
