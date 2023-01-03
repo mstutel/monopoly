@@ -1,38 +1,26 @@
-#include "Case.h"
+#pragma once
+#include <string>
+#include"Joueur.h"
+using namespace std;
 
-Case::Case()
+class Case
 {
-	nom = "";
-	suivante = nullptr;
-}
+	protected:
+		string nom;
+		Case* suivante;
 
-Case::Case(string nom)
-{
-	this->nom = nom;
-	suivante = nullptr;
-}
+	public:
+		//Constructeurs
+		Case();
+		Case(string nom);
 
-string Case::getNom()
-{
-	return nom;
-}
+		//Getters 
+		string getNom();
+		Case* getSuivante();
 
-Case* Case::getSuivante()
-{
-	return suivante;
-}
+		//Setters
+		void setNom(string nom);
+		void setSuivante(Case c);
 
-void Case::setNom(string nom)
-{
-	this->nom = nom;
-}
-
-void Case::setSuivante(Case c)
-{
-	suivante = &c;
-}
-
-Case* Case::caseSuivante()
-{
-	return suivante;
-}
+		Case* caseSuivante();
+};
