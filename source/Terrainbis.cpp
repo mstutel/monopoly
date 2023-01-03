@@ -86,8 +86,9 @@ Terrain::acheterMaison(Joueur joueur)
     {
       if (loyer != loyerhotel)
         {
-          joueur.debiter(prixMaison)
-	  loyer = listeloyer[nombredemaisons + 1]; 
+          joueur.debiter(prixMaison);
+	  nombredemaisons += 1;
+	  loyer = listeloyer[nombredemaisons]; 
         }
     }
 }
