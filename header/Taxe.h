@@ -8,5 +8,5 @@ class Taxe : public Case
 
 	public:
 		Taxe(string nom, int cout);
-		void arreterSur();
+		void arreterSur(Joueur joueur);
 };
