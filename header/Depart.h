@@ -5,5 +5,5 @@ class Depart : public Case
 {
 	public:
 		Depart(string nom);
-		void arreterSur();
+		void arreterSur(Joueur);
 };
