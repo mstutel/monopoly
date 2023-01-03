@@ -1,66 +1,67 @@
 #include "Terrainbis.h"
 using namespace std;
 
-Terrain::Terrain(string nom, int prixAchat, int loyer, int loyermaison1, int loyermaison2, int loyermaison3, int loyermaison4, int nombredemaisons, int prixMaison) : Propriete(nom,prixAchat,loyer)
+Terrain::Terrain(int nombredemaisons, int loyermaison1, int loyermaison2, int loyermaison3, int loyermaison4, int prixMaison, string Couleur) : Propriete(nom, prixAchat, loyer)
 {
+	this->Couleur = couleur;
 	this->nombredemaisons = nombredemaisons;
-	this->couleur = couleur;
-  	this->Proprietaire = NULL;
+	this->loyermaison1 = loyermaison1;
+	this->loyermaison2 = loyermaison2;
+	this->loyermaison3 = loyermaison3;
+	this->loyermaison4 = loyermaison4;
 	this->prixMaison = prixMaison;
 }
 
-Terrain::acheterTerrain(string Proprietaire, int prixAchat)
+void Terrain::listeloyer()
 {
-  if (Terrain.Proprietaire != NULL){
-    this->Proprietaire = Proprietaire;
-    this->solde = solde - prixAchat; //debiter(prixAchat)? On peut choper le solde grâce à l'héritage?
-    }
-  else {
-    cout << "Ce terrain est déjà occupé par :" << Proprietaire << endl;
-    }
+	listeloyer.push_back("loyermaison1");
+	listeloyer.push_back("loyermaison2");
+	listeloyer.push_back("loyermaison3");
+	listeloyer.push_back("loyermaison4");
+	listeloyer.push_back("loyerhotel");
 }
 
-bool Terrain::checkCouleur(string Proprietaire, string Couleur)
+bool Terrain::checkCouleur(Joueur joueur)
 {
   if (Couleur == "Marron")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Marron" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Marron" && proprietaire == proprietaire) {N += 1}}
     if (N == 2) {return true}
     }
   
   if (Couleur == "Bleu ciel")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Bleu ciel" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Bleu ciel" && proprietaire == proprietaire) {N += 1}}
     if (N == 3) {return true}
     }
   
   if (Couleur == "Rose")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Rose" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Rose" && proprietaire == proprietaire) {N += 1}}
     if (N == 3) {return true}
     }
     
   if (Couleur == "Orange")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Orange" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Orange" && proprietaire == proprietaire) {N += 1}}
     if (N == 3) {return true}
     }
     
   if (Couleur == "Rouge")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Rouge" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Rouge" && proprietaire == proprietaire) {N += 1}}
     if (N == 3) {return true}
     }
     
   if (Couleur == "Jaune")
     {N = 0; //Nombre de propriétés jaunes appartenant au joueur
       for terrain in Plateau:
-        {if (terrain.Couleur == "Jaune" && terrain.Proprietaire == Proprietaire) {N += 1}}
+        {if (terrain.Couleur == "Jaune" && proprietaire == proprietaire) {N += 1}}
     if (N == 3) {return true}
     }
     
@@ -79,27 +80,18 @@ bool Terrain::checkCouleur(string Proprietaire, string Couleur)
     }
 }
 
-Terrain::acheterMaison(string Proprietaire, string Couleur, int nombredemaisons, int prixMaison)
+Terrain::acheterMaison(Joueur joueur)
 {
-  if (checkCouleur(string Proprietaire, string Couleur) == true)
+  if (checkCouleur(Joueur joueur) == true)
     {
-      if (Terrain.loyer < loyerhotel)
+      if (loyer != loyerhotel)
         {
-          //Il faut adapter le loyer
-          this->solde = solde - prixMaison; //debiter(prixMaison)? 
+          joueur.debiter(prixMaison)
+	  loyer = listeloyer[nombredemaisons + 1]; 
         }
     }
 }
 
-void Terrain::arreterSur(Joueur joueur)
+void Terrain::arreterSur()
 {
-	if (proprietaire == nullptr) {
-			if (joueur.getSolde() >= prixAchat) {
-				this->acheter(joueur);
-			}
-		}
-		else {
-			joueur.payer(*proprietaire, loyer);
-		}
-
 }
