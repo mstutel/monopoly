@@ -42,4 +42,5 @@ void Joueur::payer(Joueur receveur, int montant)
 {
     this->debiter(montant);
     receveur.crediter(montant);
+    cout << nom << " donne " << montant << "$ à " << receveur.getNom() << endl;
 }
