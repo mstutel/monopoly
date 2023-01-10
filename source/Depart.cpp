@@ -1,9 +1,9 @@
-#include "Depart.h"
+#pragma once
+#include "Case.h"
 
-Depart :: Depart(string nom) : Case(nom) {
-}
-
-void Depart::arreterSur(Joueur joueur)
+class Depart : public Case
 {
-	joueur.crediter(200);
-}
+	public:
+		Depart(string nom);
+		void arreterSur(Joueur joueur);
+};
