@@ -1,10 +1,9 @@
 #pragma once
-#include "Case.h"
+#include "Propriete.h"
 
-class Communaute : public Case
-{	
-	private:
-		Communaute(string nom);
+class Compagnie : public Propriete
+{
 	public:
-		void arreterSur();
-}
+		Compagnie(string nom, int prixAchat, int loyer);
+		void arreterSur(Joueur joueur);
+};
