@@ -2,6 +2,7 @@
 #include <string>
 #include"Joueur.h"
 using namespace std;
+int test;
 
 class Case
 {
