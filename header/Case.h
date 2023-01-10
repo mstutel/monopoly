@@ -23,4 +23,6 @@ class Case
 		void setSuivante(Case c);
 
 		Case* caseSuivante();
+
+		void arretCase(Joueur joueur);
 };
