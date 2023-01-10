@@ -1,8 +1,10 @@
-#include "Communaute.h"
+#pragma once
+#include "Case.h"
 
-Communaute :: Communaute(string nom) : Case(nom) {
-}
-
-void Communaute::arreterSur()
-{
+class Communaute : public Case
+{	
+	private:
+		Communaute(string nom);
+	public:
+		void arreterSur();
 }
