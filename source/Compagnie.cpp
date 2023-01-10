@@ -6,6 +6,7 @@ Compagnie::Compagnie(string nom, int prixAchat, int loyer) : Propriete(nom,prixA
 
 void Compagnie::arreterSur(Joueur joueur)
 {
+	this->arretCase(joueur);
 	if (proprietaire == nullptr) {
 		if (joueur.getSolde() >= prixAchat) {
 			this->acheter(joueur);
