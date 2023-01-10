@@ -5,5 +5,5 @@ class Chance : public Case
 {
 	public:	
 		Chance(string nom);
-		void arreterSur();
+		void arreterSur(Joueur joueur);
 };
