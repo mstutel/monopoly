@@ -36,3 +36,8 @@ Case* Case::caseSuivante()
 {
 	return suivante;
 }
+
+void Case::arretCase(Joueur joueur)
+{
+	cout << joueur.getNom() << " s'arrête sur la case " << this->getNom() << endl;
+}
