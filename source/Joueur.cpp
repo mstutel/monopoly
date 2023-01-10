@@ -36,6 +36,7 @@ void Joueur::avancer(int n)
 
 void Joueur::jouer()
 {
+    
 }
 
 void Joueur::payer(Joueur receveur, int montant)
@@ -44,3 +45,4 @@ void Joueur::payer(Joueur receveur, int montant)
     receveur.crediter(montant);
     cout << nom << " donne " << montant << "$ à " << receveur.getNom() << endl;
 }
+ 

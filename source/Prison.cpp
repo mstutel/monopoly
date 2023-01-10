@@ -1,5 +1,4 @@
 #include "Prison.h"
-#include "Jeu.h"
 
 Prison :: Prison(string nom) : Case(nom) {
 }

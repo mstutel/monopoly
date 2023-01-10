@@ -9,4 +9,5 @@ void Taxe::arreterSur(Joueur joueur)
 {
 	this->arretCase(joueur);
 	joueur.debiter(cout);
+	
 }
