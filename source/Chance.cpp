@@ -1,9 +1,8 @@
-#pragma once
-#include "Case.h"
+#include "Chance.h"
 
-class Chance : public Case
+Chance :: Chance(string nom) : Case(nom) {
+}
+
+void Chance::arreterSur(Joueur joueur)
 {
-	public:	
-		Chance(string nom);
-		void arreterSur();
-};
+}

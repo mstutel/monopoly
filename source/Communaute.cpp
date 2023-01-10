@@ -1,9 +1,8 @@
-#pragma once
-#include "Propriete.h"
+#include "Communaute.h"
 
-class Compagnie : public Propriete
+Communaute :: Communaute(string nom) : Case(nom) {
+}
+
+void Communaute::arreterSur(Joueur joueur)
 {
-	public:
-		Compagnie(string nom, int prixAchat, int loyer);
-		void arreterSur(Joueur joueur);
-};
+}
