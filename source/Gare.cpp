@@ -6,6 +6,7 @@ Gare::Gare(string nom, int prixAchat, int loyer) : Propriete(nom, prixAchat, loy
 
 void Gare::arreterSur(Joueur joueur)
 {
+	this->arretCase(joueur);
 	if (proprietaire == nullptr) {
 		if (joueur.getSolde() >= prixAchat) {
 			this->acheter(joueur);
