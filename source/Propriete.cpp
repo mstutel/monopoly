@@ -33,4 +33,5 @@ void Propriete::acheter(Joueur joueur)
 {
     joueur.debiter(prixAchat);
     proprietaire = &joueur;
+    cout << joueur.getNom() << " a acheté " << nom << " pour " << loyer << "$ !" << endl;
 }
