@@ -6,4 +6,5 @@ Parc::Parc(string nom) : Case(nom)
 
 void Parc::arreterSur()
 {
+    this->arretCase(joueur);
 }
