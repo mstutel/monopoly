@@ -4,9 +4,9 @@
 class Taxe : public Case
 {
 	private:
-		int cout;
+		int prix;
 
 	public:
-		Taxe(string nom, int cout);
+		Taxe(string nom, int prix);
 		void arreterSur(Joueur joueur);
 };
