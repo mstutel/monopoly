@@ -3,21 +3,14 @@ using namespace std;
 
 Terrain::Terrain(string nom, int loyer, int prixAchat, int loyermaison1, int loyermaison2, int loyermaison3, int loyermaison4, int loyerhotel, int prixMaison, string couleur) : Propriete(nom, prixAchat, loyer)
 {
-	this->couleur = couleur;
-	this->loyermaison1 = loyermaison1;
-	this->loyermaison2 = loyermaison2;
-	this->loyermaison3 = loyermaison3;
-	this->loyermaison4 = loyermaison4;
-	this->prixMaison = prixMaison;
-}
-
-void Terrain::listeloyer()
-{
-	listeloyer.push_back("loyermaison1");
-	listeloyer.push_back("loyermaison2");
-	listeloyer.push_back("loyermaison3");
-	listeloyer.push_back("loyermaison4");
-	listeloyer.push_back("loyerhotel");
+  loyerMaison[0] = loyermaison1;
+  loyerMaison[1] = loyermaison2;
+  loyerMaison[2] = loyermaison3; 
+  loyerMaison[3] = loyermaison4; 
+  loyerMaison[4] = loyerhotel;
+  this->prixMaison = prixMaison;
+  nombreDeMaisons = 0;
+  this->couleur = couleur;
 }
 
 bool Terrain::checkCouleur(Joueur joueur) 
@@ -38,15 +31,12 @@ bool Terrain::checkCouleur(Joueur joueur)
 
 Terrain::acheterMaison(Joueur joueur)
 {
-  if (checkCouleur(Joueur joueur) == true)
-    {
-      if (loyer != loyerhotel)
-        {
-          joueur.debiter(prixMaison);
-	  nombredemaisons += 1;
-	  loyer = listeloyer[nombredemaisons]; 
-        }
-    }
+  if (checkCouleur(Joueur joueur) == true && nombreDeMaisons != 5){
+    //Faire une boucle if pour tester que les autres terrains n'ont pas moins de maisons sinon le joueur peut pas acheter de maison
+    nombreDeMaisons++;
+    loyer = loyerMaison[nombreDeMaisons]
+  }
+
 }
 
 void Terrain::arreterSur(Joueur joueur)

@@ -5,6 +5,7 @@
 class Propriete : public Case
 {
 	protected:
+		int loyerInitial;
 		int loyer;
 		int prixAchat;
 		Joueur* proprietaire;

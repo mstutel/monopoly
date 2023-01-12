@@ -4,8 +4,9 @@ using namespace std;
 
 Propriete::Propriete(string nom, int prixAchat, int loyer) : Case(nom)
 {
-    this->prixAchat = prixAchat;
+    loyerInitial = loyer;
     this->loyer = loyer; 
+    this->prixAchat = prixAchat;
     proprietaire = nullptr;
 }
 
