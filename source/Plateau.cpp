@@ -89,3 +89,8 @@ Plateau::Plateau()
     liste_cases[38] = Taxe1;
     liste_cases[39] = Terrain21;
 }
+
+Case Plateau::getCase(int n)
+{
+    return liste_cases[n];
+}

@@ -23,4 +23,5 @@ class Plateau{
 	public:
 		//Construction du plateau
     		Plateau();
+			Case getCase(int n);
 };

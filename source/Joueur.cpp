@@ -31,6 +31,8 @@ void Joueur::avancer(int n)
 {
     for (int i = 0; i < n; i++) {
         position = position->caseSuivante();
+        //if position = case départ
+        // crediter 200
     }
 }
 

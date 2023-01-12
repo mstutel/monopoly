@@ -9,6 +9,8 @@ class Propriete : public Case
 		int loyer;
 		int prixAchat;
 		Joueur* proprietaire;
+		//static Propriete* marron[2] {nom propietes}; etc
+
 
 	public:
 		//Constructeurs
