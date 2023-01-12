@@ -1,8 +1,9 @@
-Obtenir des résultats de dés aléatoires
-Créer la classe Jeu
-Changer le loyer des gares si on en a plusieurs après un achat
-Gagner 200 quand un joueur passe par la case Depart
+Créer la classe Jeu qui permet de lancer une partie, lancer les dés, définir quand qqn gagne ou perd etc (à faire vite pour pouvoir tester le jeu)
+Finir les classes Cartes, l'interaction avec les classes Chance et Communauté
 Changer le loyer d'un groupe de maison quand on les a toutes de la même couleur
-Poser des maisons et modifier le loyer en conséquence, en vérifiant que c'est possible
+Poser des maisons et modifier le loyer en conséquence, en vérifiant que c'est possible 
 Que se passe-t-il en prison ? Coder la case aller en prison et visite de prison ou prison tout court
+Changer le loyer des gares si on en a plusieurs après un achat
+Gérer le loyer des compagnies, qui dépend du résultat des dés
+Gagner 200 quand un joueur passe par la case Depart
 Rectifier le constructeur plateau car le constructeur Terrain a été modifié (en dernier car on risque de le changer encore)
