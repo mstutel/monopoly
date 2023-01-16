@@ -21,5 +21,16 @@ Groupe compagnies(lePlateau.getCase(12), lePlateau.getCase(28));
 
 class Jeu
 {
+  private:
+    vector<Joueur*> joueurs_;
+    int tourActuel_;
+    Joueur* gagnant_;
+  
+  public:
+    Jeu(vector<Joueur*> joueurs);
+    pair<int,int> LancerLesDes();
+    void TourSuivant();
+    void VerifierFin();
+    void Commencer();
 
 };
