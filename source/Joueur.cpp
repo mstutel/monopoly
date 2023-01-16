@@ -10,6 +10,11 @@ int Joueur::getSolde()
     return solde;
 }
 
+int Joueur::getPosition()
+{
+    return position;
+    }
+
 void Joueur::setNom(string nom)
 {
     this->nom = nom;
@@ -22,7 +27,7 @@ void Joueur::setSolde(int solde)
 
 void Joueur::setPosition(Case position)
 {
-
+    this->position = position;
 }
 
 //A FINIR !!!
