@@ -11,9 +11,7 @@ Terrain::Terrain(string nom, int loyer, int prixAchat, int loyermaison1, int loy
   loyerMaison[4] = loyerhotel;
   this->prixMaison = prixMaison;
   nombreDeMaisons = 0;
-  groupe = NULL; //Faire un constructeur par defaut de Groupe
 }
-
 bool Terrain::checkCouleur(Joueur joueur) 
 {
   for (int i=0; i < groupe.getTaille(); i++){

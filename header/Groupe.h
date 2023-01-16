@@ -9,6 +9,7 @@ class Groupe
         int taille;
 
     public:
+        Groupe();
         Groupe(Case a, Case b);
         Groupe(Case a, Case b, Case c);
 

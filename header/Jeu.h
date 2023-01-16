@@ -1,4 +1,5 @@
 #pragma once
+#include "Jeu.h"
 #include "Plateau.h"
 #include "Groupe.h"
 #include "vector"
