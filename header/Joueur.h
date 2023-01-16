@@ -19,6 +19,7 @@ class Joueur
 		//getters
 		string getNom();
 		int getSolde();
+		int getPosition() 
 
 		//setters
 		void setNom(string nom);
