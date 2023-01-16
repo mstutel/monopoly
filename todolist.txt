@@ -1,9 +1,9 @@
 Créer la classe Jeu qui permet de lancer une partie, lancer les dés, définir quand qqn gagne ou perd etc (à faire vite pour pouvoir tester le jeu)
 Finir les classes Cartes, l'interaction avec les classes Chance et Communauté
-Changer le loyer d'un groupe de maison quand on les a toutes de la même couleur : Réfléchir a peut être faire une classe Groupe
-Poser des maisons et modifier le loyer en conséquence, en vérifiant que c'est possible : Presque fini
+FAIT : Changer le loyer d'un groupe de maison quand on les a toutes de la même couleur
+FAIT (2 erreurs à corriger) : finiPoser des maisons et modifier le loyer en conséquence, en vérifiant que c'est possible
 Que se passe-t-il en prison ? Coder la case aller en prison et visite de prison ou prison tout court
-Changer le loyer des gares si on en a plusieurs après un achat : FAIT
+FAIT : Changer le loyer des gares si on en a plusieurs après un achat
 Gérer le loyer des compagnies, qui dépend du résultat des dés
 Gagner 200 quand un joueur passe par la case Depart
 Rectifier le constructeur plateau car le constructeur Terrain a été modifié (en dernier car on risque de le changer encore)
