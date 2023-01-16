@@ -1,39 +1,30 @@
 #include "Jeu.h"
 
-pair<int,int> Jeu::LancerLesDes() {
-    int de1 = rand() % 6 + 1;
-    int de2 = rand() % 6 + 1;
-    return make_pair(de1, de2);
-}
-
 void Jeu::TourSuivant() {
-    for (auto joueur : joueurs_) {
-        auto des = LancerLesDes();
-        int mouvements = des.first + des.second;
-        int positionActuelle = joueur->getPosition();
-        int nouvellePosition = (positionActuelle + mouvements) % 40;
-        joueur->setPosition(nouvellePosition);
-        auto espace = lePlateau->GetEspace(nouvellePosition); //Pas sûr de cette ligne-là, jsp trop à quoi ça correspond
-        espace->ArreterSur();
+    for (int i=0; i<4; i++) { //faudrait mettre size(joueurs psq un joueur peut etre élminé)
+        Joueur* joueurActuel = joueurs[i];
+        des.LancerLesDes();
+        joueurActuel->avancer(des.resultat());
+        joueurActuel->getPosition()->arreterSur(joueurActuel);
     }
-    tourActuel_++;
+    tourActuel++;
 }
 
 void Jeu::VerifierFin() {
-    for (auto joueur : joueurs_) {
+    for (auto joueur : joueurs) {
         if (joueur->GetSolde() >= 5000) {
-            gagnant_ = joueur;
+            gagnant = joueur;
             break;
         }
     }
 }
 
 void Jeu::Commencer() {
-    tourActuel_ = 1;
-    while (gagnant_ == nullptr) {
+    tourActuel = 1;
+    while (gagnant == nullptr) {
         TourSuivant();
         VerifierFin();
     }
-    cout << gagnant_->GetNom() << " a gagne la partie !" << endl;
+    cout << gagnant->GetNom() << " a gagne la partie !" << endl;
 }
 

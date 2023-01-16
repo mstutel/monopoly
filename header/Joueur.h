@@ -19,12 +19,12 @@ class Joueur : public Jeu
 		//getters
 		string getNom();
 		int getSolde();
-		int getPosition() 
+		Case* getPosition();
 
 		//setters
 		void setNom(string nom);
 		void setSolde(int solde);
-		void setPosition(Case position);
+		void setPosition(Case* position);
 
 		//Actions
 		void crediter(int credit) { solde += credit; }

@@ -10,7 +10,7 @@ int Joueur::getSolde()
     return solde;
 }
 
-int Joueur::getPosition()
+Case* Joueur::getPosition()
 {
     return position;
     }
@@ -25,12 +25,10 @@ void Joueur::setSolde(int solde)
     this->solde = solde;
 }
 
-void Joueur::setPosition(Case position)
+void Joueur::setPosition(Case* position)
 {
     this->position = position;
 }
-
-//A FINIR !!!
 
 void Joueur::avancer(int n)
 {

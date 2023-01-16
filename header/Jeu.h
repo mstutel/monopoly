@@ -3,10 +3,15 @@
 #include "Plateau.h"
 #include "Groupe.h"
 #include "vector"
+#include "Des.h"
+#include"set"
 using namespace std;
 
 //Création du plateau LE SEUL ET L'UNIQUE
 Plateau lePlateau;
+
+//Création des Dés
+Des des;
 
 //Création des groupes de couleur
 Groupe marron(lePlateau.getCase(1), lePlateau.getCase(3));
@@ -24,13 +29,12 @@ Groupe compagnies(lePlateau.getCase(12), lePlateau.getCase(28));
 class Jeu
 {
   private:
-    vector<Joueur*> joueurs_;
-    int tourActuel_;
-    Joueur* gagnant_;
+    Joueur* joueurs[4];
+    int tourActuel;
+    Joueur* gagnant;
   
   public:
-    Jeu(vector<Joueur*> joueurs);
-    pair<int,int> LancerLesDes();
+    Jeu(Joueur* joueurs[4]);
     void TourSuivant();
     void VerifierFin();
     void Commencer();
