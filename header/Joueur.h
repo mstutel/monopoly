@@ -4,7 +4,7 @@
 #include "Plateau.h"
 using namespace std;
 
-class Joueur
+class Joueur : public Jeu
 {
 	private:
 		string nom;
