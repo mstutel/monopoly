@@ -1,3 +1,5 @@
+#include "Jeu.h"
+
 pair<int,int> Jeu::LancerLesDes() {
     int de1 = rand() % 6 + 1;
     int de2 = rand() % 6 + 1;
@@ -11,7 +13,7 @@ void Jeu::TourSuivant() {
         int positionActuelle = joueur->getPosition();
         int nouvellePosition = (positionActuelle + mouvements) % 40;
         joueur->setPosition(nouvellePosition);
-        auto espace = plateau_->GetEspace(nouvellePosition); #Pas sûr de cette ligne-là, jsp trop à quoi ça correspond
+        auto espace = lePlateau->GetEspace(nouvellePosition); //Pas sûr de cette ligne-là, jsp trop à quoi ça correspond
         espace->ArreterSur();
     }
     tourActuel_++;

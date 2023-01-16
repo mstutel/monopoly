@@ -1,6 +1,7 @@
 #pragma once
 #include "Plateau.h"
 #include "Groupe.h"
+#include "vector"
 using namespace std;
 
 //Création du plateau LE SEUL ET L'UNIQUE
