@@ -56,10 +56,10 @@ void Terrain::arreterSur(Joueur joueur)
 
 Joueur *Terrain::getProprietaire()
 {
-    return proprietaire;
+  return proprietaire;
 }
 
 int Terrain::getNombreDeMaisons()
 {
-    return nombreDeMaisons;
+  return nombreDeMaisons;
 }
